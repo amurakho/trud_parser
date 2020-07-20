@@ -5,6 +5,6 @@ KEYWORDS = (
 )
 
 if __name__ == '__main__':
-    parser = LinkParser()
+    parser = LinkParser(is_paginate=False)
     for keyword in KEYWORDS:
         parser.start(keyword)
