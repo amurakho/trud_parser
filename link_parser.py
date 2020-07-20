@@ -1,9 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import typing
-import logging
 
-# https://trud.ua/jobs/list/q/{keyword}/filter_show/state/page/{page_number}
 class Not200StatusCode(Exception):
     pass
 
@@ -86,4 +84,5 @@ class LinkParser:
 
         data = self.parse_content(content)
 
+        return data
         # print(len(data))
